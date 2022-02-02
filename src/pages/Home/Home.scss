@@ -6,9 +6,38 @@
     
     .image-container {
         padding-right: 26px;
+        position: relative;
 
         img {
             width: 100%;
+        }
+
+        .dashboard-text {
+            position: absolute;
+            top: calc(50% - 75px);
+            left: 60px;
+
+            .dashboard-header {
+                font-weight: 600;
+                font-size: 62.5504px;
+                line-height: 74px;
+                letter-spacing: -0.01em;
+                
+                color: #FFFFFF;
+                padding-bottom: 16px;
+            }
+            .dashboard-content {
+                font-weight: 500;
+                font-size: 22.8358px;
+                line-height: 35px;
+                max-width: 350px;
+                /* or 152% */
+                
+                letter-spacing: 0.02em;
+                
+                color: #F0EFFF;
+                
+            }
         }
     }
 

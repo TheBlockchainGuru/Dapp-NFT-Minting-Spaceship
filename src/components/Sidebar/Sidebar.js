@@ -12,23 +12,27 @@ const Sidebar = () => {
             <div className="sidebar-container">
                 <div className="sidebar-links">
                     <div className="sidebar-item">
-                        <img src={LogoImage} />
+                        <a href="https://app.spacefalcon.com">
+                            <img src={LogoImage} />
+                        </a>
                     </div>
-                    <div className="sidebar-item">
+                    <div className="sidebar-item" title="Coming soon">
                         <HomeIcon />
                     </div>
-                    <div className="sidebar-item">
+                    <div className="sidebar-item active">
+                        <ExchangeIcon />
+                    </div>
+                    <div className="sidebar-item" title="Coming soon">
                         <ChartIcon />
                     </div>
-                    <div className="sidebar-item">
+                    <div className="sidebar-item" title="Coming soon">
                         <DiagramIcon />
-                    </div>
-                    <div className="sidebar-item">
-                        <ExchangeIcon />
                     </div>
                 </div>
                 <div className="sidebar-logout">
-                    <LogoutIcon />
+                    <a href="https://spacefalcon.io">
+                        <LogoutIcon />
+                    </a>
                 </div>
             </div>
         </div>

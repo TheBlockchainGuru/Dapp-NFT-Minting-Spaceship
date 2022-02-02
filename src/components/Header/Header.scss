@@ -50,10 +50,15 @@
             border-radius: 10px;
             padding: 8px 16px;
             background: linear-gradient(90deg, #5A71FA 14.18%, #134B7E 100%);
-
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;
+
+            .wallet-label {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
         }
     }
 }

@@ -38,6 +38,10 @@ const Home = () => {
         <div className="home">
             <div className="image-container">
                 <img src={HomeImage} />
+                <div className="dashboard-text">
+                    <div className="dashboard-header">Stake Your NFT</div>
+                    <div className="dashboard-content">Earn tokens at high APYs by minting and farming our official NFTs.</div>
+                </div>
             </div>
             <div className="cards">
             {cards.map( e => 
