@@ -1,0 +1,168 @@
+.home {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+    .image-container {
+        padding-right: 26px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .cards {
+        display: grid;
+        padding-right: 26px;
+        grid-template-columns: repeat(3, auto);
+        gap: 50px;
+        padding-top: 50px;
+        padding-bottom: 26px;
+
+        .card {
+            background: #1D2A31;
+            border-radius: 20px;
+            // max-width: 390px;
+
+            .card-preview {
+                padding: 20px;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    border-radius: 20px;
+                }
+                
+                .card-title {
+                    position: absolute;
+                    bottom: -10px;
+                    left: 45px;
+                    z-index: 8;
+                    width: calc(100% - 130px);
+                    font-size: 24px;
+                    text-align: center;
+                    letter-spacing: 0.07em;
+                    color: #FFFFFF;
+                    background: linear-gradient(
+                        90.05deg
+                        , rgba(39, 62, 70, 0.8) 2.42%, rgba(39, 58, 77, 0.8) 97.61%);
+                    border-radius: 13px;
+                    padding: 20px;
+                }
+
+                .card-info {
+                    font-size: 14px;
+                    line-height: 35px;
+                    letter-spacing: 0.03em;
+                    color: #D4E9EE;
+                    display: flex;
+                    justify-content: space-between;
+                    width: calc(100% - 62px);
+                    left: 31px;
+                    top: 36px;
+                    position: absolute;
+                    top: 30px;
+
+                    .card-apy {
+                        padding: 3px 12px;
+                        background: rgba(125, 151, 154, 0.2);
+                        border: 1px solid #3F595C;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                    }
+
+                    .card-edition {
+                        padding: 3px 12px;
+                        background: rgba(125, 151, 154, 0.2);
+                        border: 1px solid #3F595C;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .card-content {
+                padding: 35px 45px 20px 45px;
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+
+                .card-result {
+                    border: 2px solid #304152;
+                    box-sizing: border-box;
+                    border-radius: 13px;
+                    padding: 10px 0px;  
+                    text-align: center;
+
+                    .card-earned {
+                        font-weight: 500;
+                        font-size: 18px;
+                        letter-spacing: 0.03em;
+                        
+                        color: #D5E7EC;
+                    }
+
+                    .card-earned-result {
+                        font-weight: 500;
+                        font-size: 14px;
+                        letter-spacing: 0.03em;
+                        color: #D5E7EC;
+                    }
+                }
+
+                .card-operation {
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                    gap: 27px;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 35px;
+                    letter-spacing: 0.03em;
+                    color: #FFFFFF;
+
+                    .card-stake-button {
+                        background: linear-gradient(90deg, #2C86D9 4.08%, #4EB8F4 27.3%, #3CCBC2 100%);
+                        border-radius: 13px;
+                        padding: 10px 0px;
+                        cursor: pointer;
+                    }
+
+                    .card-harvest-button {
+                        background: linear-gradient(90deg, #5A71FA 14.18%, #134B7E 100%);
+                        border-radius: 13px;
+                        text-align: center;
+                        padding: 10px 0px;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .home {
+    
+        .cards {
+            grid-template-columns: repeat(2, auto);
+            justify-content: center;
+    
+            .card {
+                max-width: 400px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 991px) {
+    .home {
+        .cards {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+    
+}

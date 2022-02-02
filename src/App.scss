@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Roboto;
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+body {
+  font-family: Roboto;
+}
+
+.App {
+  background: #151515;
+  height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+
+  .page-container {
+    flex: auto;
+    background: #151515;
+  }
+}
