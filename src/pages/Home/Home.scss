@@ -67,7 +67,7 @@
                     position: absolute;
                     bottom: -10px;
                     left: 45px;
-                    z-index: 8;
+                    z-index: 0;
                     width: calc(100% - 130px);
                     font-size: 24px;
                     text-align: center;
@@ -109,6 +109,12 @@
                         border-radius: 10px;
                     }
                 }
+
+                .card-logo {
+                    position: absolute;
+                    bottom: 60px;
+                    right: 35px;
+                }
             }
 
             .card-content {
@@ -137,6 +143,93 @@
                         font-size: 14px;
                         letter-spacing: 0.03em;
                         color: #D5E7EC;
+                    }
+                }
+
+                .card-deposit {
+                    border: 2px solid #304152;
+                    box-sizing: border-box;
+                    border-radius: 13px;
+                    padding: 5px 0px 16px 0px;
+
+                    .card-deposit-title {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 35px;
+                        /* or 194% */
+                        
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                        
+                        color: #D5E7EC;
+                    }
+
+                    .nfts {
+                        display: flex;
+                        justify-content: center;
+
+                        ul {
+                            margin: 0;
+                            li {
+                                font-size: 14px;
+                                line-height: 35px;
+                                /* or 250% */
+                                letter-spacing: 0.03em;
+
+                                color: #D4E9EE;
+                            }
+                        }
+                    }
+
+                    .card-deposit-sub-title {
+                        font-size: 14px;
+                        line-height: 35px;
+                        /* or 250% */
+                        
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                        
+                        color: #97BFC9;
+                    }
+
+                    .card-deposit-controls {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 15px;
+
+                        .card-deposit-minus {
+                            padding: 0px 32px;
+                            flex: 0 0 auto;
+
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 35px;
+                            /* or 146% */
+                            
+                            letter-spacing: 0.03em;
+                            
+                            color: #657D93;
+                            background: #253747;
+                            border-radius: 18px;
+                            cursor: pointer;
+                        } 
+
+                        .card-deposit-plus {
+                            padding: 0px 32px;
+                            flex: 0 0 auto;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 35px;
+                            /* or 146% */
+
+                            letter-spacing: 0.03em;
+
+                            color: #FFFFFF;
+                            background: linear-gradient(90deg, #2D7CAA 0%, #3B47A5 100%);
+                            border-radius: 18px;
+                            cursor: pointer;
+                        }
                     }
                 }
 

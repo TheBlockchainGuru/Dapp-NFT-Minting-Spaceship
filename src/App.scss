@@ -5,6 +5,9 @@
 
 body {
   font-family: Roboto;
+  .ReactModal__Overlay {
+    background-color: rgba(21, 21, 21, 0.8) !important;
+  }
 }
 
 .App {

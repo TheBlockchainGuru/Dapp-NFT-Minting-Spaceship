@@ -16,10 +16,10 @@ const Sidebar = () => {
                             <img src={LogoImage} />
                         </a>
                     </div>
-                    <div className="sidebar-item" title="Coming soon">
+                    <div className="sidebar-item active" title="Coming soon">
                         <HomeIcon />
                     </div>
-                    <div className="sidebar-item active">
+                    <div className="sidebar-item">
                         <ExchangeIcon />
                     </div>
                     <div className="sidebar-item" title="Coming soon">
