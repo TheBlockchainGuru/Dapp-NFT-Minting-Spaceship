@@ -84,7 +84,7 @@ const Card = (props) => {
                         </div>
                     </div>
                     <div className="card-operation">
-                        <div className="card-stake-button">Stake</div>
+                        <div className="card-stake-button" onClick={openStakingModal}>Stake</div>
                         <div className="card-harvest-button" onClick={openHarvestModal}>Harvest</div>
                     </div>
                 </div>

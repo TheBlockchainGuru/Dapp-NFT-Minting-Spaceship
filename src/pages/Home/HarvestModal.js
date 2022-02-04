@@ -53,7 +53,7 @@ const HarvestModal = ({open, onClose}) => {
                     letterSpacing: '0.05em',
                     color: '#FFFFFF',
                 }}>Harvest</div>
-                <div onClick={handleClose}>x</div>
+                <div onClick={handleClose}><i className="fas fa-times"></i></div>
             </div>
             <div style={{
                 background: '#25353E',

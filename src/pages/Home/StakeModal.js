@@ -19,25 +19,25 @@ const customStyles = {
 
 const StakeModal = ({open, onClose, nfts, setNft}) => {
     let index = 0
-    // const [tempNft, setTemp] = useState([])
+    let originNfts = JSON.parse(JSON.stringify(nfts));
     const handleClose = () => {
         onClose()
     }
 
     const onToggle = (e, nftIndex) => {
-        if(nfts[nftIndex].state == 0) {
-            nfts[nftIndex].state = 1
+        if(originNfts[nftIndex].state == 0) {
+            originNfts[nftIndex].state = 1
             e.target.style.background = '#45737E'
             e.target.style.border = '2px solid #97BFC9'
         } else {
-            nfts[nftIndex].state = 0
+            originNfts[nftIndex].state = 0
             e.target.style.background = '#25353E'
             e.target.style.border = '2px solid #304152'
         }
     }
 
     const onStake = () => {
-        setNft(nfts)
+        setNft(originNfts)
         onClose()
     }
 
@@ -61,7 +61,7 @@ const StakeModal = ({open, onClose, nfts, setNft}) => {
                     letterSpacing: '0.05em',
                     color: '#FFFFFF',
                 }}>NFT to be staked</div>
-                <div onClick={handleClose}>x</div>
+                <div onClick={handleClose}><i className="fas fa-times"></i></div>
             </div>
             <div style={{
                 padding: '27px 0px 14px 0px',
@@ -70,9 +70,9 @@ const StakeModal = ({open, onClose, nfts, setNft}) => {
                 gap: '16px',
             }}>
                 {
-                    nfts.length && nfts.find(ele => ele.state == 0) 
+                    originNfts.length && originNfts.find(ele => ele.state == 0) 
                     ?
-                        nfts.map(e => 
+                        originNfts.map(e => 
                             <div key={index ++}>
                                 {e.state == 0 
                                 ?   <div style={{
